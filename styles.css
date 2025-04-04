@@ -1,0 +1,151 @@
+/* General Styles for Hub and Game Pages */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: relative;
+    top: 10px; /* Ensures the bar stays slightly below the top */
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    padding: 5px 15px;
+    border-radius: 30px; /* Rounded boxes around each button */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px; /* Match rounded corners of the box */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #f39c12;
+    background-color: #444; /* Highlight active button with a different background */
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Game Page Background */
+.game-page {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full-screen height */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.game-page h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.game-page p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Play Button */
+.play-button {
+    display: inline-block;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #f39c12;
+    transform: scale(1.1); /* Slight scaling effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effect */
+.play-button:focus, .play-button:hover {
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Optional: Add additional styles for mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
